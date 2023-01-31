@@ -61,6 +61,25 @@ pre {
     border-radius: 8px;
 }
 
-img {
-    display: none;
+table, td, th {
+    border-collapse: collapse;
+    border: 1px solid;
+    padding: 0.25em;
+}
+
+figure {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+figure img {
+    border-radius: 8px;
+    max-width: 90%;
+    max-height: 65vh;
+}
+
+figcaption {
+    padding: 0.5em;
+    font-style: italic;
 }
