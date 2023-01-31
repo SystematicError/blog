@@ -1,8 +1,8 @@
 #!/bin/sh
 
 AUTHOR="Systematic Error"
-INPUT_DIR="posts"
-OUTPUT_DIR="out"
+INPUT_DIR="src"
+OUTPUT_DIR="posts"
 
 for post in "$INPUT_DIR"/*; do
     out_name=${post##*/}
