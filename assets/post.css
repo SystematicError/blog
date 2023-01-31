@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+    --bg: #181a1b;
+    --fg: #ffffff;
+    --seperator: #34383a;
+    --link-hover: #aaaaaa;
+    --code-bg: #1d1f20;
+    
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--fg);
+    font-family: "Nunito Sans";
+}
+
+.back-button {
+    position: fixed;
+    top: 1em;
+    right: 1em;
+}
+
+.content {
+    margin: 8em 20% 8em 20%;
+}
+
+@media only screen and (max-width: 768px) {
+    .content {
+        margin: 0% 5%;
+    }
+}
+
+.title {
+    font-size: 3.2em;
+    text-align: center;
+}
+
+hr {
+    color: var(--seperator);
+}
+
+a {
+    color: var(--fg);
+    transition: 0.1s;
+}
+
+a:hover {
+    color: var(--link-hover);
+}
+
+pre {
+    background-color: var(--code-bg);
+    font-family: "JetBrains Mono";
+    padding: 1em;
+    border-radius: 8px;
+}
+
+img {
+    display: none;
+}

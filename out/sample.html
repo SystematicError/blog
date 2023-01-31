@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta name="author" content="Systematic Error">
+        <meta name="description" content="I just made this really nice website with pandoc">
+
+        <!-- TODO: Self host css, js and fonts -->
+
+        <link rel="stylesheet" type="text/css" href="../assets/post.css">
+
+        
+        <title>Very cool site</title>
+    </head>
+
+    <body>
+        <a class="back-button" href="../">Back</a>
+
+        <div class="content">
+            <h1 class="title">Very cool site</h1>
+
+            <nav role="doc-toc">
+                <h2>Table of Contents</h2>
+                <ul>
+                <li><a href="#first"><span class="toc-section-number">1</span> First</a><ul>
+                <li><a href="#second"><span class="toc-section-number">1.1</span> Second</a><ul>
+                <li><a href="#third"><span class="toc-section-number">1.1.1</span> Third</a></li>
+                </ul></li>
+                </ul></li>
+                </ul>
+            </nav>
+
+<h1 id="first"><span class="header-section-number">1</span> First</h1>
+<h2 id="second"><span class="header-section-number">1.1</span> Second</h2>
+<h3 id="third"><span class="header-section-number">1.1.1</span> Third</h3>
+<h4 id="fourth"><span class="header-section-number">1.1.1.1</span> Fourth</h4>
+<h5 id="fifth"><span class="header-section-number">1.1.1.1.1</span> Fifth</h5>
+<h6 id="sixth"><span class="header-section-number">1.1.1.1.1.1</span> Sixth</h6>
+<p><em>italics</em></p>
+<p><strong>bold</strong></p>
+<p>Regular text</p>
+<p><a href="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Minecraft_missing_texture_block.svg/1200px-Minecraft_missing_texture_block.svg.png">link</a></p>
+<figure>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Minecraft_missing_texture_block.svg/1200px-Minecraft_missing_texture_block.svg.png" alt="image" /><figcaption>image</figcaption>
+</figure>
+<ol type="1">
+<li>this
+<ol start="2" type="1">
+<li>is
+<ol start="3" type="1">
+<li>an</li>
+</ol></li>
+</ol></li>
+<li>ordered</li>
+<li>list</li>
+</ol>
+<ul>
+<li>this
+<ul>
+<li>is
+<ul>
+<li>an</li>
+</ul></li>
+</ul></li>
+<li>unordered</li>
+<li>list</li>
+</ul>
+<pre class="python"><code>from random import randint
+
+if randint(1, 10) == 1:
+    print(&quot;Hello lucky reader&quot;)</code></pre>
+<table>
+<thead>
+<tr class="header">
+<th>Insightful</th>
+<th>Headers</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>This</td>
+<td>Is</td>
+</tr>
+<tr class="even">
+<td>a</td>
+<td>table</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>a very insightful quote</p>
+</blockquote>
+<ul>
+<li>[ ] cool</li>
+<li>[x] checkboxes</li>
+</ul>
+<p>H<sub>2</sub>O</p>
+<p>e<sup>x</sup></p>
+        </div>
+    </body>
+</html>
