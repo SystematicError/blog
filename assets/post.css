@@ -4,10 +4,11 @@
 :root {
     --bg: #181a1b;
     --fg: #ffffff;
+    --header-number: #565b5e;
     --seperator: #34383a;
     --link-hover: #aaaaaa;
     --code-bg: #1d1f20;
-    
+    --quote: #327ae5;
 }
 
 html {
@@ -41,17 +42,37 @@ body {
     text-align: center;
 }
 
+nav[role="doc-toc"] ul {
+    list-style: none;
+}
+
+nav[role="doc-toc"] a {
+    text-decoration: none;
+}
+
+.header-section-number {
+    color: var(--header-number);
+}
+
 hr {
     color: var(--seperator);
 }
 
 a {
     color: var(--fg);
-    transition: 0.1s;
+    transition: 0.15s;
 }
 
 a:hover {
     color: var(--link-hover);
+}
+
+ul {
+    list-style-type: disc;
+}
+
+ul, ol {
+    padding-left: 1.25em;
 }
 
 pre {
@@ -82,4 +103,10 @@ figure img {
 figcaption {
     padding: 0.5em;
     font-style: italic;
+}
+
+blockquote {
+    margin-left: 0px;
+    padding-left: 1em;
+    border-left: 2px solid var(--quote);
 }
