@@ -6,8 +6,6 @@ OUTPUT_DIR="posts"
 
 contents=""
 
-cp assets/home.html index.html
-
 for post in "$INPUT_DIR"/*; do
     out_name=${post##*/}
     out_name=${out_name%.*}
@@ -21,20 +19,17 @@ for post in "$INPUT_DIR"/*; do
         --template assets/post.html \
         --output "$OUTPUT_DIR/$out_name".html \
         "$post"
-
-    pandoc --template assets/listing.html --variable=link:"$OUTPUT_DIR/$out_name.html" $post | \
-        pandoc \
-            --from html \
-            --standalone \
-            --metadata=title:"Blogs" \
-            --metadata=author:"$AUTHOR" \
-            --template index.html \
-            --output index.html
+    
+    listing=$(pandoc --template assets/listing.html --variable=link:"$OUTPUT_DIR/$out_name.html" $post)
+    contents="$contents$listing"
 done
 
-printf "" | \
+printf -- "$contents" |
     pandoc \
+        --standalone \
+        --from html \
         --metadata=title:"Blogs" \
-        --template index.html \
+        --metadata=author:"$AUTHOR" \
+        --template assets/home.html \
         --output index.html
 
