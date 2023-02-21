@@ -1,7 +1,7 @@
 ---
 title: Very cool site
 description: I just made this really nice website with pandoc
-date: January 1, 2000
+date: Jan 1, 2000
 syntax-highlighting: false
 ---
 
