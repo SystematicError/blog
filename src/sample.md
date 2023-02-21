@@ -1,6 +1,6 @@
 ---
-title: Very cool site
-description: I just made this really nice website with pandoc
+title: Sample post
+description: This post is to test some markdown features
 date: Jan 1, 2000
 syntax-highlighting: false
 ---
