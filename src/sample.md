@@ -50,9 +50,6 @@ if randint(1, 10) == 1:
 > a very
 > insightful quote
 
-- [ ] cool
-- [x] checkboxes
-
 H~2~O
 
 e^x^
