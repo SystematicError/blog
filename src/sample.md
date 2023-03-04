@@ -1,8 +1,7 @@
 ---
 title: Sample post
 description: This post is to test some markdown features
-date: Jan 1, 2000
-syntax-highlighting: false
+date: 20000101
 ---
 
 # First
